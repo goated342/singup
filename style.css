@@ -1,10 +1,10 @@
 body{
   background: black;
+  height: 500px;
 }
 
 .modal {
   display: flex; 
-  position: fixed; 
   z-index: 1; 
   left: 0;
   top: 0;
@@ -270,7 +270,10 @@ body{
   .container::before {
       display: none;
       overflow-x:hidden;
-  
+  }
+
+  .container{
+    margin-left: 10%;
   }
   form {
       width: 80%;
@@ -310,22 +313,15 @@ body{
     clear: both;
     display: table;
   }
-  
-  @media screen and (min-width:1680px){
-    .close{
-      left: 1641px;
-      top: 3px;
-    }
-  }
-  
+
   
   @media (max-width:779px) {
     .container {
       position: absolute;
       width: 90vw;
-      height: 126vh;
+      height: 80vh;
       overflow-x: hidden;
-      margin-left: 2%;
+      margin-left: 5%;
       z-index: 1;
     }
     
